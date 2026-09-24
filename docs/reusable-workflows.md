@@ -38,10 +38,10 @@ jobs:
       pull-requests: write
       id-token: write
       actions: read
-    uses: tonythethompson/opencode-review-threads/.github/workflows/opencode-bot.yml@e4ebbcfd7fa7ff642c32367b5817d7ef304cd1d8  # v1.4.2
+    uses: tonythethompson/opencode-review-threads/.github/workflows/opencode-bot.yml@v1
     with:
       model: opencode-go/kimi-k3
-    secrets:
+    secrets:https://github.com/notifications?query=repo%3Atonythethompson%2Fopencode-review-threads
       OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
 ```
 
@@ -75,7 +75,7 @@ jobs:
       pull-requests: write
       id-token: write
       actions: read
-    uses: tonythethompson/opencode-review-threads/.github/workflows/opencode-review.yml@e4ebbcfd7fa7ff642c32367b5817d7ef304cd1d8  # v1.4.2
+    uses: tonythethompson/opencode-review-threads/.github/workflows/opencode-review.yml@v1
     with:
       model: openrouter/openrouter/free
     secrets:
